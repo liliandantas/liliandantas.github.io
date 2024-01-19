@@ -1,0 +1,73 @@
+.grid-contato {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+  padding: 7.5rem 8.75rem;
+}
+
+.contato {
+  background-color: #000;
+}
+
+.grid-contato::before {
+  content: url('/img/detalhe.svg');
+  position: absolute;
+  margin-top: -11.5rem;
+}
+
+.mensagem {
+  align-self: center;
+}
+
+.contato p {
+  color: #ccc;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  max-width: 26.8125rem;
+}
+
+.dados-contato p {
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  padding-bottom: 1.88rem;
+}
+
+.direitos p {
+  color: #8f8f8f;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  padding-bottom: 0;
+}
+
+@media (max-width: 950px) {
+  .dados-contato p {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+
+  .grid-contato .dados-contato {
+    align-self: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-contato {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    padding: 5rem 5rem;
+  }
+
+  .contato p,
+  .dados-contato p,
+  .direitos p {
+    text-align: center;
+  }
+
+  .grid-contato::before {
+    margin-top: -9rem;
+  }
+}

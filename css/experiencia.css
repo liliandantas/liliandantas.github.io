@@ -1,0 +1,201 @@
+.experiencia {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem 8.75rem;
+  gap: 5rem;
+  margin-top: 7rem;
+}
+
+.experiencia h2 {
+  color: #e0e0e0;
+  font-size: 9rem;
+  line-height: 9rem;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+.exp-sobre {
+  color: #525252;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  max-width: 40ch;
+  padding-bottom: 3.75rem;
+}
+
+.exp-sobre b {
+  color: #141414;
+}
+
+.experiencia2 {
+  padding-left: 3.9rem;
+}
+
+.trabalho {
+  background-color: #f5f5f5;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  border: 0.0625rem solid #f0f0f0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 41.25rem;
+  height: 8.75rem;
+}
+
+.trabalho::after {
+  content: '';
+  width: 0.25rem;
+  height: 1.25rem;
+  position: absolute;
+  background: linear-gradient(180deg, #b6f829, #67dd0a);
+  margin-left: -1.5rem;
+}
+
+.bikcraft::after {
+  content: '2045';
+  color: #525252;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: absolute;
+  margin-left: -9.5rem;
+}
+
+.surfbot::after {
+  content: '2044-45';
+  color: #525252;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: absolute;
+  margin-left: -10.5rem;
+}
+
+.brafe::after {
+  content: '2044';
+  color: #525252;
+  font-size: 0.875rem;
+  font-weight: 400;
+  position: absolute;
+  margin-left: -8rem;
+}
+
+.descricao p {
+  color: #525252;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.62rem;
+}
+
+.tecnologias {
+  display: flex;
+  flex-direction: flex-row;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.tecnologia {
+  background-color: white;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.nivel {
+  padding-left: 4.69rem;
+}
+
+.nivel h3 {
+  padding-bottom: 0.62rem;
+}
+
+@media (max-width: 1300px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+
+  .experiencia h2 {
+    text-align: center;
+    max-width: 100%;
+    font-size: 7rem;
+  }
+
+  .experiencia2 {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .exp-sobre {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 950px) {
+  .experiencia {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .experiencia h2 {
+    font-size: 5rem;
+  }
+
+  .bikcraft::after {
+    margin-left: 1rem;
+    margin-top: 0.15rem;
+  }
+
+  .surfbot::after {
+    margin-left: 1rem;
+    margin-top: 0.15rem;
+  }
+
+  .brafe::after {
+    margin-left: 1rem;
+    margin-top: 0.15rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .experiencia h2 {
+    font-size: 4rem;
+  }
+
+  .exp-sobre {
+    padding-bottom: 1.5rem;
+  }
+
+  .trabalho {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 20rem;
+    height: 17rem;
+    padding-bottom: 8rem;
+    margin: 1rem auto;
+  }
+
+  .nivel {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .experiencia {
+    gap: 0.5rem;
+  }
+
+  .experiencia h2 {
+    font-size: 3rem;
+    height: 7rem;
+  }
+
+  .exp-sobre {
+    font-size: 1rem;
+  }
+}
